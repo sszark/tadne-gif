@@ -2,6 +2,8 @@
 
 Turn AI generated images from https://thisanimedoesnotexist.ai/ into gifs.
 
+![https://thisanimedoesnotexist.ai/slider.html?seed=00077](https://user-images.githubusercontent.com/69489918/156848829-6c75c905-109e-483b-bb60-cf119f11a14a.gif)
+
 ## Requirements
 
 * shuf (coreutils)
@@ -28,10 +30,6 @@ OPTIONS:
     --help      Shows help information
 
 ```
-
-## Example Output
-
-<p align="center"><img src="https://user-images.githubusercontent.com/69489918/156848829-6c75c905-109e-483b-bb60-cf119f11a14a.gif"></p>
 
 ## License
 
