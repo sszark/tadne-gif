@@ -11,7 +11,10 @@ error() {
 }
 
 dep_check() {
-    which $1 1> /dev/null 2> /dev/null || error "dependency missing: $1"
+    read deps
+    while IFS= read -r dep; do
+        which $dep 1> /dev/null 2> /dev/null || error "dependency missing: $dep"
+    done <<< "$deps"
 }
 
 help() {
@@ -69,10 +72,11 @@ archive() {
     done
 }
 
-# check dependencies
-dep_check "convert"
-dep_check "curl"
-dep_check "shuf"
+# check dependencies (coreutils is assumed to be installed)
+dep_check << EndOfMessage
+convert
+curl
+EndOfMessage
 
 case "$1" in
     "--help"|"")
