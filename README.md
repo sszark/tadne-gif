@@ -6,9 +6,9 @@ Turn AI generated images from https://thisanimedoesnotexist.ai/ into gifs.
 
 ## Requirements
 
-* shuf (coreutils)
+* coreutils
+* imagemagick
 * curl
-* convert (imagemagick)
 
 ## Setup
 
